@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Joumana</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <img src="photo/logo.jpg" alt="Hostel Joumana Logo" style="height: 60px;">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="intro" id="home">
+  <img src="photo/Main-p.jpg" alt="Entrance to Hostel Joumana" style="width: 100%; max-height: auto; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+  <h1>Welcome to Hostel Joumana - Discount Season!</h1>
+  <p>Enjoy our special discounted prices for a limited time. Book your stay now and save!</p>
+</section>
+
+<section class="gallery" id="rooms">
+  <h2>Our Rooms</h2>
+  <div class="gallery-container">
+    <img src="photo/p4.jpg" alt="Living Room" onclick="openLightbox(this)">
+
+    <img src="photo/p3.jpg" alt="Bedroom" onclick="openLightbox(this)">
+    <img src="photo/p2.jpg" alt="Living Room" onclick="openLightbox(this)">
+    <img src="photo/p1.jpg" alt="Living Room" onclick="openLightbox(this)">
+    <img src="photo/p5.jpg" alt="Living Room" onclick="openLightbox(this)">
+    <img src="photo/p6.jpg" alt="Living Room" onclick="openLightbox(this)">
+    <img src="photo/p7.jpg" alt="Living Room" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
+
+<section class="pricing">
+  <h2>Room Prices - Discount Season!</h2>
+  <table>
+    <tr>
+      <th>Room Type</th>
+      <th>Discounted Price per Night</th>
+    </tr>
+    <tr style="background-color: #ffdddd;">
+      <td>Single Room</td>
+      <td style="color: #d8000c; font-weight: bold;">4500DA <span style="text-decoration: line-through; color: #888;">6000DA</span></td>
+    </tr>
+    <tr style="background-color: #ffebcc;">
+      <td>Double Room</td>
+      <td style="color: #d26900; font-weight: bold;">5500Da <span style="text-decoration: line-through; color: #888;">7500DA</span></td>
+    </tr>
+    <tr style="background-color: #ddffdd;">
+      <td>Family Suite</td>
+      <td style="color: #4f8a10; font-weight: bold;">$6500 <span style="text-decoration: line-through; color: #888;">8500DA</span></td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  <p>Contact us: +213 670097023 | hosteljoumana@example.com</p>
+  <p>Follow us on social media
+    <a href="https://www.facebook.com/share/1FP3CZ89Pz/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color: #FFD700; text-decoration: none; margin-left: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.333v21.333C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.324-.597 1.324-1.334V1.333C24 .597 23.403 0 22.675 0z"/>
+      </svg>
+    </a>
+  </p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
